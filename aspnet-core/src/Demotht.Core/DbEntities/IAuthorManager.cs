@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Abp.Domain.Services;
+
+namespace Demotht.DbEntities
+{
+    public interface IAuthorManager:IDomainService
+    {
+        IEnumerable<Author> GetAllList();
+        Author GetAuthorById(int id);
+        Task<Author> Create(Author entity);
+        void Update(Author entity);
+        void Delete(int id);
+    }
+}
