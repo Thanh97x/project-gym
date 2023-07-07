@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Demotht.Books.Dto
+{
+    public class GetBookInput
+    {
+        public int Id { get; set; }
+
+    }
+}
